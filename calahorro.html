@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ahorro - EcoElectricidad</title>
+    <link rel="stylesheet" href="css/calahorro.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">EcoElectricidad</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calculadora.html">Calculadora de Consumo</a></li>
+                <li><a href="ahorro.html">Consejos de Ahorro</a></li>
+                <li><a href="impacto.html">Impacto Ambiental</a></li>
+                <li><a href="comparador.html">Comparador de Electrodomésticos</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Calculadora de Ahorro -->
+    <section id="calculadora" class="savings-calculator-section">
+        <h1>Calculadora de Ahorro Energético</h1>
+        <p>Calcula cuánto puedes ahorrar al implementar mejoras en el consumo energético de tu hogar.</p>
+        <div class="calculator-form">
+            <div class="form-group">
+                <label for="currentUsage">Consumo Actual (kWh/mes):</label>
+                <input type="number" id="currentUsage" name="currentUsage" placeholder="Ej. 300">
+                <small>Introduce tu consumo mensual actual de electricidad.</small>
+            </div>
+            <div class="form-group">
+                <label for="newUsage">Consumo Reducido (kWh/mes):</label>
+                <input type="number" id="newUsage" name="newUsage" placeholder="Ej. 250">
+                <small>Introduce el consumo mensual después de implementar mejoras.</small>
+            </div>
+            <button type="button" onclick="calculateSavings()">Calcular Ahorro</button>
+        </div>
+        <div id="savings-result" class="savings-result"></div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="links">
+            <a href="index.html">Inicio</a>
+            <a href="calculadora.html">Calculadora de Consumo</a>
+            <a href="ahorro.html">Consejos de Ahorro</a>
+            <a href="#blog">Blog</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://instagram.com">Instagram</a>
+        </div>
+        <div class="contact">
+            <p>Contacto: info@ecoelectricidad.com</p>
+            <form>
+                <label for="email">Suscríbete a nuestro boletín:</label>
+                <input type="email" id="email" name="email" placeholder="Tu email">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="js/calahorro.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('../images/bbva-energia.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero .btn {
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+/* Introduction Section */
+#introduccion {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+}
+
+#introduccion .content {
+    flex: 1;
+    margin-right: 2em;
+    text-align: justify;
+}
+
+#introduccion .image {
+    flex: 1;
+    text-align: center;
+}
+
+#introduccion .image img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* Benefits Section */
+#beneficios {
+    background: #ecf0f1;
+    padding: 2rem;
+    text-align: center;
+}
+
+#beneficios ul {
+    list-style: none;
+    padding: 0;
+}
+
+#beneficios ul li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+/* Tools Section */
+#herramientas {
+    padding: 2rem;
+}
+
+#herramientas .tool {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+#herramientas .tool .image {
+    flex: 1;
+}
+
+#herramientas .tool .image img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+#herramientas .tool .content {
+    flex: 2;
+}
+
+#herramientas .tool h3 {
+    font-size: 1.5rem;
+}
+
+#herramientas .tool p {
+    margin: 0.5rem 0;
+}
+
+#herramientas .tool .btn {
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+/* Blog Section */
+#blog {
+    background: #ecf0f1;
+    padding: 2rem;
+}
+
+#blog .articles {
+    display: flex;
+    gap: 1rem;
+}
+
+#blog article {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex: 1;
+    text-align: center;
+}
+
+#blog article img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#blog article h3 {
+    font-size: 1.2rem;
+    margin: 2rem 1rem;
+}
+
+#blog article p {
+    margin: 1.5rem 1rem;
+}
+
+#blog article .btn {
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+/* Community Section */
+#comunidad {
+    padding: 2rem;
+    text-align: center;
+}
+
+#comunidad .btn {
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+/* Testimonials Section */
+#testimonios {
+    background: #ecf0f1;
+    padding: 2rem;
+}
+
+#testimonios blockquote {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#testimonios blockquote img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#testimonios blockquote cite {
+    font-style: normal;
+    color: #7f8c8d;
+}
+
+/* Footer Styles */
+footer {
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+footer .links, footer .social, footer .contact {
+    flex: 1;
+    margin: 1rem;
+}
+
+footer .links a, footer .social a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+footer .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer .contact form input, footer .contact form button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}

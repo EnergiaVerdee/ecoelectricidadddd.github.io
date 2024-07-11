@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro y Comunidad - EcoElectricidad</title>
+    <link rel="stylesheet" href="css/foro.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">EcoElectricidad</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calculadora.html">Calculadora de Consumo</a></li>
+                <li><a href="ahorro.html">Consejos de Ahorro</a></li>
+                <li><a href="impacto.html">Impacto Ambiental</a></li>
+                <li><a href="comparador.html">Comparador de Electrodomésticos</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Foro y Comunidad -->
+    <section id="comunidad" class="community-section">
+        <h1>Foro y Comunidad</h1>
+        <p>Únete a nuestra comunidad para discutir y compartir sobre el consumo responsable de electricidad.</p>
+        
+        <!-- Registro e inicio de sesión -->
+        <div class="auth-section">
+            <div class="auth-form" id="register-form">
+                <h2>Regístrate</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="register-username">Nombre de usuario:</label>
+                        <input type="text" id="register-username" name="username" placeholder="Tu nombre de usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Contraseña:</label>
+                        <input type="password" id="register-password" name="password" placeholder="Tu contraseña">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-profile-pic">Foto de perfil (opcional):</label>
+                        <input type="file" id="register-profile-pic" name="profile-pic" accept="image/*">
+                    </div>
+                    <button type="button" onclick="registerUser()">Registrarse</button>
+                </form>
+            </div>
+
+            <div class="auth-form" id="login-form">
+                <h2>Inicia Sesión</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="login-username">Nombre de usuario:</label>
+                        <input type="text" id="login-username" name="username" placeholder="Tu nombre de usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Contraseña:</label>
+                        <input type="password" id="login-password" name="password" placeholder="Tu contraseña">
+                    </div>
+                    <button type="button" onclick="loginUser()">Iniciar Sesión</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Foro -->
+        <div id="forum-section" class="forum-section">
+            <h2>Foro de Discusión</h2>
+            <div class="new-topic">
+                <input type="text" id="new-topic-title" placeholder="Título del tema">
+                <textarea id="new-topic-content" placeholder="Contenido del tema"></textarea>
+                <button type="button" onclick="postTopic()">Publicar Tema</button>
+            </div>
+            <div id="topics-list" class="topics-list">
+                <!-- Temas de discusión se agregarán aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="links">
+            <a href="index.html">Inicio</a>
+            <a href="calculadora.html">Calculadora de Consumo</a>
+            <a href="ahorro.html">Consejos de Ahorro</a>
+            <a href="#blog">Blog</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://instagram.com">Instagram</a>
+        </div>
+        <div class="contact">
+            <p>Contacto: info@ecoelectricidad.com</p>
+            <form>
+                <label for="email">Suscríbete a nuestro boletín:</label>
+                <input type="email" id="email" name="email" placeholder="Tu email">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="js/foro.js"></script>
+</body>
+</html>
